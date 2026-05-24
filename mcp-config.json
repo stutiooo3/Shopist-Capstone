@@ -1,0 +1,17 @@
+
+{
+  "mcp-server-playwright": {
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-playwright"],
+    "env": {
+      "PLAYWRIGHT_PROJECT_DIR": "./tests"
+    },
+    "capabilities": {
+      "prompts": true,
+      "tools": {
+        "analyze_dom_state": true,
+        "auto_generate_regression_specs": true
+      }
+    }
+  }
+}

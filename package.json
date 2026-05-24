@@ -1,0 +1,27 @@
+{
+  "name": "shopist-capstone",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:parallel": "playwright test --workers=4",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "test:ui": "playwright test --ui",
+    "test:blocker": "playwright test --grep @blocker",
+    "test:critical": "playwright test --grep @critical",
+    "test:major": "playwright test --grep @major",
+    "test:chromium": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project='Mobile Chrome'",
+    "report:html": "playwright show-report",
+    "report:allure": "if exist allure-report\\history (xcopy /s /e /y allure-report\\history allure-results\\history) && npx allure generate allure-results --clean -o allure-report && npx allure open allure-report",
+    "trace": "playwright show-trace"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "allure-commandline": "^2.42.0",
+    "allure-playwright": "^3.0.0",
+    "dotenv": "^16.6.1"
+  }
+}
