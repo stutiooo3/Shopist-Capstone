@@ -9,3 +9,5 @@ playwright/.auth/
 allure-results/
 allure-report/
 .env
+mcp-config.json
+.vscode/mcp.json
