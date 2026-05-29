@@ -1,0 +1,20 @@
+{
+  "validUser": { "username": "qa.user@shopist.io", "password": "Sh0pist!Test" },
+  "departments": ["chairs", "lighting", "sofas"],
+  "checkout": {
+    "valid": {
+      "name": "Jane QA",
+      "email": "jane@shopist.io",
+      "card": "4111111111111111",
+      "month": "12",
+      "year": "2030",
+      "postal": "10001"
+    }
+  },
+"security": {
+    "sqlInjection": "' OR '1'='1",
+    "xssPayload": "<script>alert('x')</script>",
+    "specialChars": "!@#$%^&*()",
+    "longString": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  }
+}
